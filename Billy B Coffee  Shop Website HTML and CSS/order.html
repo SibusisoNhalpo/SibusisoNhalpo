@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	    <title>Order Form</title>
+    </head>
+    <body class="order">
+        <h4 id="h41">To place an order, please fill out the information below</h4>
+        <div class="inputGroup">
+            <div class="inputBox">
+                <input type="text" required="required" class="first-line">
+                <span>First Name</span>
+            </div>
+            <div class="inputBox">
+                <input type="text" required="required" class="second-line">
+                <span>Last Name</span>
+            </div>
+        </div>
+        <div class="inputGroup">
+            <div class="inputBox">
+                <input type="email" required="required" class="first-line">
+                <span>Email</span>
+            </div>
+            <div class="inputBox">
+                <input type="text" required="required" class="second-line">
+                <span>Delivery Address</span>
+            </div>
+        </div>
+        <h4>Pick 3 days and times that work best for your delivery</h4>
+        <p id="note">*Note: Delivery dates must be requested immediately
+             prior to the desired delivery date.</p>
+        <div class="inputGroup">
+            <div class="inputBox">
+                <input type="date" required>
+                <input type="time" class="time" required>
+            </div>
+        </div>
+        <h4 id="h42">Select which store you'd like to order from, followed by your desired items</h4>
+        <div class="inputGroup">
+            <div class="inputBox">
+                <input type="text" required>
+                <span>Billy B Cafe Coffee</span>
+                <br>
+                <textarea class="list" placeholder="Insert Shopping List Here..."></textarea>
+            </div>
+        </div>
+        <div class="inputGroup">
+            <div class="inputBox">
+                <label for="property-type" class="property-type">Property Type:</label>
+                <select name="property-type" id="property-type">
+                    <option value="house">House</option>
+                    <option value="apartment">Apartment</option>
+                    <option value="condo">Condo</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+        </div>
+        <div class="inputGroup">
+            <div class="inputBox">
+                <textarea class="delivery-instructions" 
+                placeholder="Delivery Instcructions..."></textarea>
+            </div>
+        </div>
+        <style>
+            nav {
+margin-top: 20px;
+margin-left: -238px;
+position: fixed;
+top: 0;
+width: 470px;
+height: 50px;
+background-color: #34495e;
+border-radius: 8px;
+font-size: 0;
+z-index: 2;
+}
+
+nav a {
+line-height: 50px;
+height: 100%;
+font-size: 15px;
+font-family: Arial Rounded MT Bold;
+display: inline-block;
+position: relative;
+z-index: 2;
+text-decoration: none;
+text-transform: uppercase;
+text-align: center;
+color: white;
+cursor: pointer;
+}
+
+nav .animation {
+position: absolute;
+height: 100%;
+top: 0;
+z-index: 1;
+transition: all .5s ease 0s;
+border-radius: 8px;
+}
+a:nth-child(1) {
+width: 100px;
+}
+a:nth-child(2) {
+width: 110px;
+}
+a:nth-child(3) {
+width: 100px;
+}
+a:nth-child(4) {
+width: 160px;
+}
+nav .start-home, a:nth-child(1):hover~.animation {
+width: 100px;
+left: 0;
+background-color: #1e90ff;
+}
+nav .start-home, a:nth-child(2):hover~.animation {
+width: 110px;
+left: 100px;
+background-color: #1e90ff;
+}
+nav .start-home, a:nth-child(3):hover~.animation {
+width: 100px;
+left: 210px;
+background-color: #1e90ff;
+}
+nav .start-home, a:nth-child(4):hover~.animation {
+width: 160px;
+left: 310px;
+background-color: #1e90ff;
+}
+
+{
+margin: 0 auto;
+padding: 0;
+box-sizing: border-box;
+font-family: Arial Rounded MT Bold;
+}
+body {
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+min-height: 100vh;
+gap: 30px;
+background: burlywood;
+-webkit-font-smoothing: antialiased;
+}
+#h41 {
+padding-top: 150px;
+width: 40%;
+text-align: center;
+}
+
+p {
+width: 60%;
+text-align: center;
+}
+
+#h42 {
+width: 60%;
+text-align: center;
+}
+
+.inputBox {
+display: inline-block;
+position: relative;
+width: 375px;
+}
+
+.inputBox input {
+width: 100%;
+padding: 10px;
+border: 2px solid #1e90ff;
+background: #bfc2c4;
+border-radius: 5px;
+outline: none;
+color: rgb(235, 226, 226);
+font-size: 1em;
+transition: 0.5s;
+}
+
+.inputBox span {
+position: absolute;
+left: 0;
+padding: 10px;
+pointer-events: none;
+font-size: 1em;
+color: rgb(230, 221, 221);
+text-transform: uppercase;
+transition: 0.5s;
+}
+
+.inputBox input:valid ~ span,
+.inputBox input:focus ~ span {
+color: red;
+transform: translateX(10px) translateY(-7px);
+font-size: 0.65em;
+padding: 0 10px;
+background: #bfc2c4;
+border-left: 1px solid rgb(226, 217, 217);
+border-right: 1px solid rgb(241, 238, 238);
+letter-spacing: 0.2em;
+}
+
+.inputBox input:valid,
+.inputBox input:foucs {
+border: 1px solid rgb(238, 226, 226);
+}
+
+#note {
+font-size: small;
+align-content: center;
+}
+
+.inputBox input.time {
+margin: 5px 0 20px 0;
+}
+
+.inputBox textarea {
+width: 150%;
+padding: 10px;
+margin-top: 20px;
+margin-left: -62px;
+border: 2px solid #1e90ff;
+background: #bfc2c4;
+border-radius: 5px;
+outline: none;
+color: rgb(250, 249, 249);
+font-size: 1em;
+transition: 0.5s;
+height: 200px;
+
+}
+
+textarea::placeholder {
+color: rgb(245, 245, 245);
+}
+
+#property-type {
+width: 50%;
+padding: 10px;
+border: 2px solid #1e90ff;
+background: #bfc2c4;
+border-radius: 5px;
+outline: none;
+color: rgb(233, 227, 227);
+font-size: 1em;
+}
+
+@media only screen and (max-width: 600px) {
+#h41, #h42 {
+font-size: 20px;
+text-align: center;
+}
+        </style>
+    </body>
+</html>```
+
+
