@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio — Developer Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="index.html">Sibusiso<span class="accent">.</span></a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    <nav class="site-nav" id="siteNav">
+      <a href="index.html" class="">Home</a>
+      <a href="about.html" class="">About</a>
+      <a href="portfolio.html" class="active">Portfolio</a>
+      <a href="contact.html" class="">Contact</a>
+      <a href="resume.html" class="">Resume/CV</a>
+    </nav>
+  </header>
+  <main>
+<section class="portfolio">
+  <h2>Portfolio</h2>
+  <div class="filters">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="java">Java</button>
+    <button class="filter-btn" data-filter="web">Web</button>
+  </div>
+  <div class="grid" id="projectGrid">
+    <article class="card java">
+      <img src="images/management.jpg" alt="Management System project screenshot">
+      <div class="card-body">
+        <h3>Management System (File I/O)</h3>
+        <p>A Java-based management system using file I/O for saving and loading data. Includes supplier details and purchase order tracking.</p>
+      </div>
+    </article>
+    <article class="card java">
+      <img src="images/login.jpg" alt="Java Login UI project screenshot">
+      <div class="card-body">
+        <h3>Login UI (Java Swing)</h3>
+        <p>A simple, secure Login GUI in Java Swing with validation and friendly error handling.</p>
+      </div>
+    </article>
+    <article class="card web">
+      <img src="images/website.jpg" alt="Personal website project screenshot">
+      <div class="card-body">
+        <h3>Personal Website</h3>
+        <p>A modern, responsive portfolio website with smooth animations and clear information architecture.</p>
+      </div>
+    </article>
+  </div>
+  <p class="more">See more on my <a href="https://github.com/SibusisoNhalpo" target="_blank" rel="noopener">GitHub</a>.</p>
+</section>
+  </main>
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Sibusiso Nhlapo — Built with ♥</p>
+    <div class="socials">
+      <a href="https://github.com/SibusisoNhalpo" target="_blank" rel="noopener">GitHub</a>
+      <a href="sibusisonhlapo468@gmail.com">Email</a>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+  <script src="js/portfolio.js"></script>
+</body>
+</html>

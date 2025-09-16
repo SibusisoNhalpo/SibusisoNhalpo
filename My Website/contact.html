@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact — Developer Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="index.html">Sibusiso<span class="accent">.</span></a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    <nav class="site-nav" id="siteNav">
+      <a href="index.html" class="">Home</a>
+      <a href="about.html" class="">About</a>
+      <a href="portfolio.html" class="">Portfolio</a>
+      <a href="contact.html" class="active">Contact</a>
+      <a href="resume.html" class="">Resume/CV</a>
+    </nav>
+  </header>
+  <main>
+<section class="contact">
+  <h2>Contact</h2>
+  <div class="contact-grid">
+    <div class="contact-info">
+      <p><img class="icon" src="images/icons/phone.svg" alt=""> <strong>Phone:</strong> +2769-439-2803</p>
+      <p><img class="icon" src="images/icons/email.svg" alt=""> <strong>Email:</strong> "sibusisonhlapo468@gmail.com"</p>
+      <p><img class="icon" src="images/icons/github.svg" alt=""> <strong>GitHub:</strong> <a href="https://github.com/SibusisoNhalpo" target="_blank" rel="noopener">your-github</a></p>
+      <p><img class="icon" src="images/icons/linkedin.jpeg" alt=""> <strong>Iinkedin:</strong> <a href="https://linkedin.com/in/Sibusiso-nhlapo-587742290" target="_blank" rel="noopener" >your-linkedin</a></p>
+      <p><strong>Location:</strong> Johannesburg, South Africa</p>
+    </div>
+    <form id="contactForm" class="contact-form" novalidate>
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" placeholder="Your name" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" placeholder="How can I help?" required></textarea>
+
+      <button type="submit" class="btn primary">Send</button>
+      <p id="formStatus" class="form-status" role="status" aria-live="polite"></p>
+    </form>
+  </div>
+</section>
+  </main>
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Sibusiso Nhlapo — Built with ♥</p>
+    <div class="socials">
+      <a href="https://github.com/SibusisoNhalpo" target="_blank" rel="noopener">GitHub</a>
+      <a href="sibusisonhlapo468@gmail.com">Email</a>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+  <script src="js/contact.js"></script>
+</body>
+</html>
