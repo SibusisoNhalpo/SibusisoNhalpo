@@ -1,6 +1,6 @@
 # Hi 👋, I'm Sibusiso Nhlapo
 
-🎓 Software Development Student  
+🎓 Software Developer  
 💻 Aspiring Software Developer | Java & Web Technologies  
 
 
