@@ -9,6 +9,7 @@
 - Web applications and system integrations  
 
 🧠 Interests:
+
 •Backend development 
 • Databases 
 • System design
