@@ -1,6 +1,6 @@
 # 👋 Hi, I’m Sibusiso Nhlapo
 
-Software Development Graduate  
+FULL-STACK DEVELOPER  
 
 I explore the universe of code through *Java and Web Development*, with a strong interest in backend systems, databases, and scalable software.
 
